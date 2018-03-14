@@ -1,5 +1,5 @@
-# Stock Trading Strategy Data Collector
-# tdime 7/29
+# Stock Data Collector
+# tdime 7/29/2017
 
 import os.path
 import urllib2
