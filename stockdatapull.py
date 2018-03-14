@@ -1,4 +1,4 @@
-#Stock Trading Strategy
+# Stock Trading Strategy Data Collector
 # tdime 7/29
 
 import os.path
@@ -14,11 +14,10 @@ TIME_INTERVAL = ['1min','Daily'] #['5min','1min','Daily'] # ['1min', '5min', '15
 
 TICKERLISTSITE = "http://en.wikipedia.org/wiki/List_of_S%26P_500_companies"
 HISTORICAL_DATA_PATH = "/volume1/homes/tdime/documents/TickData/HistoricalData/"
-APIKEY = YOURAPIKEY
+APIKEY = 'your free API key from www.alphavantage.co'
 
-INTRADAYURL = ('https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol={0}&outputsize=full&interval={1}&apikey=MTSXZNR7E9V2MGR8&datatype=csv')
+INTRADAYURL = ('https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol={0}&outputsize=full&interval={1}&apikey=%s&datatype=csv' % APIKEY)
 URL = ('https://www.alphavantage.co/query?function=TIME_SERIES_{1}&symbol={0}&outputsize=compact&apikey=%s&datatype=csv' % APIKEY)
-
 
 DAYS_BACK_OF_INTEREST = 9
 
