@@ -13,7 +13,7 @@ except ImportError:  # python 2
 TIME_INTERVAL = ['1min','Daily'] #['5min','1min','Daily'] # ['1min', '5min', '15min', '30min', '60min', 'Daily', 'Weekly']
 
 TICKERLISTSITE = "http://en.wikipedia.org/wiki/List_of_S%26P_500_companies"
-HISTORICAL_DATA_PATH = "/volume1/homes/tdime/documents/TickData/HistoricalData/"
+HISTORICAL_DATA_PATH = "./HistoricalData/"
 APIKEY = 'your free API key from www.alphavantage.co'
 
 INTRADAYURL = ('https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol={0}&outputsize=full&interval={1}&apikey=%s&datatype=csv' % APIKEY)
